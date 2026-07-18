@@ -8,7 +8,7 @@ Recommended repository name: `ai-quiz-study`
 
 ## Domain candidates
 
-First candidate: `aiichimon.jp`
+Confirmed domain: `aiichimon.jp`
 
 Other candidates:
 

@@ -8,11 +8,11 @@ Recommended repository name: `ai-quiz-study`
 
 ## Domain candidates
 
-Confirmed domain: `aiichimon.jp`
+Confirmed domain: `https://syunnjack.github.io/ai-quiz-study/`
 
 Other candidates:
 
-- `aiichimon.jp`
+- `https://syunnjack.github.io/ai-quiz-study/`
 - `quizstudy.jp`
 - `shikakuai.jp`
 - `gyoseiquiz.jp`

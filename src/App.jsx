@@ -6,103 +6,46 @@ const postKey = 'ai-quiz-study.posts'
 const items = [
   {
     "id": "ai-quiz-study-1",
-    "title": "名古屋 行政法 seed",
-    "area": "名古屋",
+    "title": "行政法 一問一答セット",
+    "area": "名古屋会場向け",
     "category": "行政法",
     "score": 94,
-    "summary": "行政書士などの資格学習を、一問一答、AI解説、弱点復習、連続学習、LINE通知で継続させる学習アプリ。 初期データとして、検索意図、UGC、送客導線を同じ画面で確認できるようにしています。",
-    "tags": [
-      "行政法",
-      "名古屋",
-      "UGC",
-      "SEO/AIO"
-    ],
-    "routes": [
-      "有料問題集",
-      "月額復習プラン",
-      "講座アフィリエイト"
-    ],
-    "revenue": "有料問題集"
+    "summary": "行政事件訴訟法・行政手続法・国家賠償法などを中心にした行政法の一問一答セットです。条文の趣旨と判例のポイントを短い解説つきで確認できます。",
+    "tags": ["行政法", "条文", "判例"],
   },
   {
     "id": "ai-quiz-study-2",
-    "title": "東京 民法 seed",
-    "area": "東京",
+    "title": "民法 一問一答セット",
+    "area": "東京会場向け",
     "category": "民法",
     "score": 90,
-    "summary": "行政書士などの資格学習を、一問一答、AI解説、弱点復習、連続学習、LINE通知で継続させる学習アプリ。 初期データとして、検索意図、UGC、送客導線を同じ画面で確認できるようにしています。",
-    "tags": [
-      "民法",
-      "東京",
-      "UGC",
-      "SEO/AIO"
-    ],
-    "routes": [
-      "月額復習プラン",
-      "講座アフィリエイト",
-      "模試販売"
-    ],
-    "revenue": "月額復習プラン"
+    "summary": "総則・物権・債権・親族・相続の頻出テーマを中心にした民法の一問一答セットです。間違えやすい判例・条文の言い回しを重点的に扱っています。",
+    "tags": ["民法", "条文", "判例"],
   },
   {
     "id": "ai-quiz-study-3",
-    "title": "大阪 憲法 seed",
-    "area": "大阪",
+    "title": "憲法 一問一答セット",
+    "area": "大阪会場向け",
     "category": "憲法",
     "score": 86,
-    "summary": "行政書士などの資格学習を、一問一答、AI解説、弱点復習、連続学習、LINE通知で継続させる学習アプリ。 初期データとして、検索意図、UGC、送客導線を同じ画面で確認できるようにしています。",
-    "tags": [
-      "憲法",
-      "大阪",
-      "UGC",
-      "SEO/AIO"
-    ],
-    "routes": [
-      "講座アフィリエイト",
-      "模試販売",
-      "教育広告"
-    ],
-    "revenue": "講座アフィリエイト"
+    "summary": "人権分野・統治機構それぞれの頻出論点を中心にした憲法の一問一答セットです。重要判例の結論と理由づけをセットで確認できます。",
+    "tags": ["憲法", "人権", "統治機構"],
   },
   {
     "id": "ai-quiz-study-4",
-    "title": "静岡 商法 seed",
-    "area": "静岡",
+    "title": "商法・会社法 一問一答セット",
+    "area": "静岡会場向け",
     "category": "商法",
     "score": 82,
-    "summary": "行政書士などの資格学習を、一問一答、AI解説、弱点復習、連続学習、LINE通知で継続させる学習アプリ。 初期データとして、検索意図、UGC、送客導線を同じ画面で確認できるようにしています。",
-    "tags": [
-      "商法",
-      "静岡",
-      "UGC",
-      "SEO/AIO"
-    ],
-    "routes": [
-      "模試販売",
-      "教育広告",
-      "有料問題集"
-    ],
-    "revenue": "模試販売"
+    "summary": "商法総則・会社法の設立・機関設計などを中心にした一問一答セットです。出題頻度の高い数字・要件を整理して確認できます。",
+    "tags": ["商法", "会社法"],
   }
 ]
-const revenuePlans = [
-  "有料問題集",
-  "月額復習プラン",
-  "講座アフィリエイト",
-  "模試販売",
-  "教育広告"
-]
-const buzzIdeas = [
-  "UGC投稿キャンペーン",
-  "Xで共有できるランキングカード",
-  "LINE通知で再訪導線を作る",
-  "地域/カテゴリ別LPを量産",
-  "スポンサー専用ページ"
-]
 const faqs = [
-  ['誰向けのサービスですか？', '資格・AI一問一答に関心があり、検索後すぐに行動したいユーザー向けです。'],
-  ['主な収益化は何ですか？', '有料問題集、月額復習プラン、講座アフィリエイト、模試販売、教育広告を初期導線にします。'],
-  ['SEO/AIO/LLMOでは何を狙いますか？', '地域名、カテゴリ、条件、口コミ、通知、比較、FAQを組み合わせたロングテールページを狙います。'],
+  ['無料で使えますか？', 'はい、会員登録なしで無料でご利用いただけます。'],
+  ['保存した問題セットはどこに残りますか？', 'ご利用の端末（ブラウザ）にのみ保存されます。他の端末とは共有されないため、機種変更やブラウザのデータ削除で消える点にご注意ください。'],
+  ['行政書士以外の資格にも対応していますか？', '現在は行政書士試験の科目（行政法・民法・憲法・商法）のみです。他資格への対応は今後検討していきます。'],
+  ['投稿した口コミ・訂正情報は誰が見られますか？', '現在は投稿者ご本人の端末内のみで保存される試験運用です。全体への公開は準備中です。'],
 ]
 
 function readArray(key) {
@@ -141,24 +84,24 @@ function App() {
     <main className="app-shell">
       <section className="hero">
         <div>
-          <p className="eyebrow">資格・AI一問一答</p>
+          <p className="eyebrow">資格試験・一問一答</p>
           <h1>AI Quiz Study</h1>
-          <p className="lead">行政書士などの資格学習を、一問一答、AI解説、弱点復習、連続学習、LINE通知で継続させる学習アプリ。</p>
+          <p className="lead">行政書士試験の科目別に、一問一答形式で知識を確認できる学習アプリです。すきま時間に気になる科目だけ選んで取り組めます。</p>
         </div>
         <aside className="hero-panel">
-          <span>aiichimon.jp / ai-quiz-study</span>
-          <strong>検索、UGC、通知、送客を1つの収益導線にまとめる。</strong>
-          <p>PDFアイデアの深掘り版として、初期状態からSEO/AIO/LLMO、UGC、収益導線を入れています。</p>
+          <span>aiichimon.jp</span>
+          <strong>科目を選んで、すぐに一問一答。</strong>
+          <p>会員登録は不要です。気になる問題セットを保存しておけば、次に開いたときすぐに続きから取り組めます。</p>
         </aside>
       </section>
       <section className="controls" aria-label="検索条件">
-        <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="地域・カテゴリ・条件で検索" />
+        <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="科目名などで検索" />
         <select value={category} onChange={(event) => setCategory(event.target.value)}>{categories.map((item) => <option key={item}>{item}</option>)}</select>
       </section>
       <section className="metrics">
-        <article><span>Seed records</span><strong>{items.length}</strong></article>
-        <article><span>Saved leads</span><strong>{saved.length}</strong></article>
-        <article><span>UGC reports</span><strong>{posts.length}</strong></article>
+        <article><span>収録セット数</span><strong>{items.length}</strong></article>
+        <article><span>保存した問題セット</span><strong>{saved.length}</strong></article>
+        <article><span>みんなの投稿</span><strong>{posts.length}</strong></article>
       </section>
       <section className="card-grid">
         {filtered.map((item) => (
@@ -167,42 +110,30 @@ function App() {
             <h2>{item.title}</h2>
             <p>{item.summary}</p>
             <div className="tag-row">{item.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-            <div className="route-list">{item.routes.map((route) => <span key={route}>{route}</span>)}</div>
-            <p className="revenue">収益導線: {item.revenue}</p>
-            <button type="button" onClick={() => toggleSave(item.id)}>{saved.includes(item.id) ? '保存済み' : '送客候補に保存'}</button>
+            <button type="button" onClick={() => toggleSave(item.id)}>{saved.includes(item.id) ? '保存済み' : 'この問題セットを保存'}</button>
           </article>
         ))}
       </section>
       <section className="split">
         <div className="panel">
-          <h2>技術選定</h2>
-          <article><b>Frontend</b><p>Vite + React 19。静的サイトとして速く、GitHub Pagesへ載せやすい構成です。</p></article>
-          <article><b>Data</b><p>MVPは静的seed + localStorage。運用段階でSupabaseまたはCloudflare D1へ移行します。</p></article>
-          <article><b>Growth</b><p>地域LP、カテゴリLP、FAQ、llms.txt、UGC投稿、通知導線でロングテールを増やします。</p></article>
-          <article><b>収益ルート</b><p>{revenuePlans.join(' / ')}</p></article>
-          <article><b>バズ施策</b><p>{buzzIdeas.join(' / ')}</p></article>
+          <h2>このサービスについて</h2>
+          <article><b>収録内容</b><p>行政書士試験の科目（行政法・民法・憲法・商法）ごとに、頻出論点を一問一答形式でまとめています。</p></article>
+          <article><b>データの保存先</b><p>保存した問題セットやみんなの投稿は、お使いの端末（ブラウザ）にのみ記録されます。サーバーには送信されません。</p></article>
+          <article><b>今後の対応予定</b><p>科目・問題数を順次追加していく予定です。行政書士以外の資格への対応は検討中です。</p></article>
         </div>
         <div className="panel">
-          <h2>UGC投稿</h2>
-          <p>口コミ、訂正、在庫、現地確認、閉店、レビュー、写真メモなどを投稿できる初期導線です。</p>
+          <h2>みんなの投稿</h2>
+          <p>問題セットの誤りに気づいた、補足情報を共有したい、という場合にご利用ください。</p>
           <form className="ugc-form" onSubmit={addPost}>
             <input value={form.title} onChange={(event) => setForm({ ...form, title: event.target.value })} placeholder="投稿タイトル" />
-            <input value={form.target} onChange={(event) => setForm({ ...form, target: event.target.value })} placeholder="対象カテゴリ" />
-            <input value={form.memo} onChange={(event) => setForm({ ...form, memo: event.target.value })} placeholder="現地メモ・口コミ・訂正情報" />
+            <input value={form.target} onChange={(event) => setForm({ ...form, target: event.target.value })} placeholder="対象科目" />
+            <input value={form.memo} onChange={(event) => setForm({ ...form, memo: event.target.value })} placeholder="気づいた点・補足情報" />
             <button>投稿</button>
           </form>
           <div className="post-list">
-            {posts.length === 0 && <p className="empty">公開後はUGCで鮮度を作ります。</p>}
+            {posts.length === 0 && <p className="empty">まだ投稿はありません。</p>}
             {posts.map((post) => <article key={post.id}><b>{post.title}</b><p>{post.memo}</p><small>{post.target} / {post.date}</small></article>)}
           </div>
-        </div>
-      </section>
-      <section className="seo-section">
-        <h2>SEO / AIO / LLMO</h2>
-        <div className="seo-grid">
-          <article><b>地域ページ</b><p>駅名、市区町村、周辺施設名でページを作ります。</p></article>
-          <article><b>条件ページ</b><p>料金、営業時間、在庫、通知、口コミ、比較条件を組み合わせます。</p></article>
-          <article><b>収益ページ</b><p>予約、掲載、クーポン、アフィリエイト、スポンサー枠へ接続します。</p></article>
         </div>
       </section>
       <section className="faq-section">

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ai-quiz-study.vercel.app/sitemap.xml
+Sitemap: https://aiichimon.jp/sitemap.xml
